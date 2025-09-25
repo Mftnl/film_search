@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Film search</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <!-- logo -->
+            <div class="logo">
+                <div class="container">
+                    <p>Film<span>SEARCH.</span></p>
+                </div>
+            </div>
+            <!-- end of logo -->
+            <!-- search container -->
+            <div class="search_container" id="search_container">
+                <div class="search_element">
+                    <p>Movie title:</p>
+                    <input type="text" class="search-form-control" id="input-box" placeholder="Search movie title..." onkeyup="findMovies()">
+                    <div class="search-list" id="search-list">
+                        <!-- list here -->
+                        <!-- <div class="search-list-item">
+                            <div class="search-list-start">
+                                <img src="./assets/thumb-1920-1002901.jpg" alt="avengers poster jpg">
+                            </div>
+                            <div class="search-item-info">
+                                <h3>The avengers</h3>
+                                <p>2019</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- end of search container --> 
+            <!-- result container -->
+            <div class="container">
+                <div class="result-container" >
+                    <div class="result-grid" id="result-grid">
+                        <!-- movie information here -->
+                         <!-- <div class="movie-poster">
+                            <img src="./assets/thumb-1920-1002901.jpg" alt="poster" >
+                         </div>
+                         <div class="movie-info">
+                            <h3 class="movie-title"> Avengers: Endgame</h3>
+                         
+                         <ul class="movie-misc-info">
+                            <li class="year">Year: 2019</li>
+                            <li class="released">Released: 26.04.2019 </li>
+                            <li class="rated">Ratings: PG-13</li>
+                         </ul><br>
+                         <p class="genre"> <b>Genre: </b>Superhero, Science Fiction, Action, Drama, Adventure, Fantasy</p><br>
+                         <p class="writer"> <b>Writer: </b>Christopher Markus, Stephen McFeely</p><br>
+                         <p class="actors"> <b>Actors: </b>Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson</p><br>
+                         <p class="plot"> <b>Plot: </b>Following the devastating events of Avengers: Infinity War, half of all life in the universe has vanished due to Thanos' snap. The remaining Avengers are scattered and grieving. Tony Stark and Nebula are stranded in space but are rescued by Captain Marvel. Back on Earth, the team locates Thanos, only to find he has destroyed the Infinity Stones. In a fit of rage, Thor kills him.
+</p> <br>
+                        <p class="language"><b>Language: </b> English</p> <br>
+                        <p class="awards"><b>Awards: </b> <i class="fas fa-award"></i>won Oscar for best visual effects</p><br>
+                    </div><br> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of result container -->
+        </div>
+    </main>
+</body>
+<!-- js file -->
+<script src="./js/api.js"></script>
+</html>

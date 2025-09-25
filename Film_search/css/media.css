@@ -1,0 +1,80 @@
+@media(max-width: 450px){
+    .movie-info .writer,
+    .movie-info .genre,
+    .movie-info .plot,
+    .movie-info .actors,
+    .movie-info .language,
+    .movie-info .year,
+    .movie-info .released,
+    .movie-info .rated{
+        font-size: 0.7rem ;
+    }
+    .logo p{
+        font-size: 1.2rem ;
+    }
+    .search-element .form-control{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+    }
+    .search-element h3{
+        font-size: 1.4rem;
+    }
+    .search-list{
+        width: 90%;
+        right: 50%;
+        transform: translate(50%);
+    }
+    .search-list .search-list-item{
+        width: 100%;
+    }
+    .movie-misc-info{
+        flex-direction: column;
+    }
+    .movie-misc-info li:nth-child(2){
+        margin: 0.8rem 0;
+    }
+    .movie-poster img{
+        width: 85%;
+    }
+}
+
+@media(min-width: 800px){
+    .wrapper .container{
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+    .search-element{
+        flex-direction: row;
+    }
+    .search-element h3{
+        margin-bottom: 0;
+    }
+    .result-grid{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+    }
+    .movie-info{
+        text-align: left;
+        padding-top: 30px;
+    }
+    .movie-info .movie-misc-info{
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    .movie-info .plot{
+        margin-left: 0;
+    }
+    .movie-info .writer{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .movie-poster{
+        display: grid;
+        place-items: center;
+    }
+}
